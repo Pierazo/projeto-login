@@ -62,11 +62,12 @@ div#formulario>p {
 
 form>div.campo {
     background-color: #5f2c82;
+    border: 1px #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
-    margin: 5px 0px;
+    border-radius: 8px;
+    margin: 2px 0px;
 
 }
 
@@ -75,10 +76,34 @@ div.campo>label {
 
 }
 
+div.campo>span {
+    color: white;
+    /* background-color: black; */
+    font-size: 2em;
+    width: 50px;
+    padding: 4px;
+}
+
+
+div.campo>input {
+    background-color: #49a09d;
+    font-size: 0.9em;
+    width: calc(100% - 24%);
+    height: 82%;
+    transform: translateY(-12px);
+    /*posicionamento do login reajusta o e-mail e senha*/
+    border: 0px;
+    border-radius: 8px;
+}
+
+div.campo>input:focus-within {
+    background-color: white;
+}
+
 div#formulario>h1 {
     text-align: center;
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 form>input[type="submit"] {

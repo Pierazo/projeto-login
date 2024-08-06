@@ -2,31 +2,80 @@
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
+
     section#login {
-        width: 80vw;
+        width: 80%;
+        height: 480px;
+        margin: 0 auto;
+        /**/
+
     }
+
+    div.campo>input {
+        background-color: #49a09d;
+        font-size: 0.9em;
+
+        width: calc(100% -24%);
+        height: 82%;
+        transform: translateY(-12px);
+        /*posicionamento do login reajusta o e-mail e senha*/
+        border: 0px;
+        border-radius: 8px;
+
+    }
+
+
+
+    div.campo>span {
+        color: white;
+        /* background-color: black; */
+        font-size: 2em;
+        width: 60px;
+        padding: 4px;
+
+    }
+
     section#login>div#formulario {
         float: left;
-        width: 30%;
+        width: calc(100% - 22%);
         height: 100%;
+        transform: translateX(-7px);
     }
+
     section#login>div#imagem {
         float: right;
         width: 70%;
     }
+
+
+    form>div.campo {
+        background-color: #5f2c82;
+        border: 1px #5f2c82;
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        margin: 2px 0px;
+
+    }
+
+
 }
 
 @media screen and (min-width: 992px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
+
     section#login {
-        width: 950px;
+        width: 955px;
     }
+
     section#login>div#formulario {
         float: left;
         width: 50%;
     }
+
     section#login>div#imagem {
         float: right;
         width: 50%;
